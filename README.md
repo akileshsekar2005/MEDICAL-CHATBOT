@@ -1,10 +1,10 @@
-# 🏥 MediBot — AI-Powered Medical Chatbot
+#  MediBot — AI-Powered Medical Chatbot
  
 An intelligent medical chatbot built using **RAG (Retrieval Augmented Generation)**, **LangChain**, **Pinecone**, **HuggingFace Embeddings**, and **Groq LLaMA 3.1** — powered by the Gale Encyclopedia of Medicine.
  
 ---
  
-## 🖥️ Live Demo
+##  Live Demo
  
 > Ask any medical question and get instant, accurate answers from a trusted medical knowledge base.
  
@@ -12,7 +12,7 @@ An intelligent medical chatbot built using **RAG (Retrieval Augmented Generation
  
 ---
  
-## 🧠 What This Project Does
+##  What This Project Does
  
 MediBot is a full-stack AI medical assistant that:
 - Loads and processes a medical PDF (Gale Encyclopedia of Medicine — 637 pages)
@@ -25,7 +25,7 @@ MediBot is a full-stack AI medical assistant that:
 - Serves everything through a beautiful Flask web interface
 ---
  
-## 🗂️ Project Structure
+##  Project Structure
  
 ```
 MEDICAL-CHATBOT/
@@ -51,7 +51,7 @@ MEDICAL-CHATBOT/
  
 ---
  
-## ⚙️ Tech Stack
+##  Tech Stack
  
 | Technology | Purpose |
 |---|---|
@@ -67,7 +67,7 @@ MEDICAL-CHATBOT/
  
 ---
  
-## 🚀 Getting Started
+##  Getting Started
  
 ### 1. Clone the Repository
  
@@ -129,7 +129,7 @@ http://localhost:8080
  
 ---
  
-## 🔑 API Keys Required
+##  API Keys Required
  
 | Key | Where to Get | Cost |
 |---|---|---|
@@ -138,7 +138,7 @@ http://localhost:8080
  
 ---
  
-## 📦 Requirements
+##  Requirements
  
 ```
 flask
@@ -157,7 +157,7 @@ python-dotenv
  
 ---
  
-## 🏗️ How It Works
+##  How It Works
  
 ```
 User asks a question
@@ -175,30 +175,30 @@ Answer displayed in chat UI with conversation memory
  
 ---
  
-## ✨ Features
+##  Features
  
-- 🩺 **Medical knowledge base** — 637 pages, 5,860+ chunks from Gale Encyclopedia
-- ⚡ **Instant responses** — Groq LLaMA 3.1 with sub-2s response time
-- 🧠 **Conversation memory** — remembers last 10 messages for follow-up questions
-- 🎨 **Premium dark UI** — glassmorphism design with animations
-- 📱 **Mobile responsive** — works on all screen sizes
-- 🔒 **Privacy first** — zero user data stored
-- 🏥 **Category filters** — General, Symptoms, Medications, Nutrition, Mental Health, Emergency
-- 💬 **Live query counter** — real-time stats bar
+-  **Medical knowledge base** — 637 pages, 5,860+ chunks from Gale Encyclopedia
+-  **Instant responses** — Groq LLaMA 3.1 with sub-2s response time
+-  **Conversation memory** — remembers last 10 messages for follow-up questions
+-  **Premium dark UI** — glassmorphism design with animations
+-  **Mobile responsive** — works on all screen sizes
+-  **Privacy first** — zero user data stored
+-  **Category filters** — General, Symptoms, Medications, Nutrition, Mental Health, Emergency
+-  **Live query counter** — real-time stats bar
 ---
  
-## ⚠️ Disclaimer
+##  Disclaimer
  
 MediBot provides general medical information only. It is **not a substitute for professional medical advice**, diagnosis, or treatment. Always consult a qualified healthcare provider for medical concerns.
  
 ---
  
-## 👨‍💻 Author
+##  Author
  
 **Akilesh**
 - GitHub: [@your-username](https://github.com/your-username)
 ---
  
-## 📄 License
+## License
  
 This project is licensed under the MIT License.
