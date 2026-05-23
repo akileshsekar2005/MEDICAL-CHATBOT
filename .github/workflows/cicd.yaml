@@ -30,6 +30,8 @@ jobs:
           ECR_REPOSITORY: ${{ secrets.ECR_REPO }}
           IMAGE_TAG: latest
         run: |
+          ECR_REPOSITORY=$(echo "$ECR_REPOSITORY" | tr -d '\r\n ')
+
           echo "Registry: $ECR_REGISTRY"
           echo "Repository: $ECR_REPOSITORY"
           echo "Image Tag: $IMAGE_TAG"
@@ -56,8 +58,11 @@ jobs:
         uses: aws-actions/amazon-ecr-login@v1
 
       - name: Pull latest image
+        env:
+          ECR_REPOSITORY: ${{ secrets.ECR_REPO }}
         run: |
-          docker pull "${{ steps.login-ecr.outputs.registry }}/${{ secrets.ECR_REPO }}:latest"
+          ECR_REPOSITORY=$(echo "$ECR_REPOSITORY" | tr -d '\r\n ')
+          docker pull "${{ steps.login-ecr.outputs.registry }}/$ECR_REPOSITORY:latest"
 
       - name: Stop old container
         run: |
@@ -65,7 +70,11 @@ jobs:
           docker rm app-container || true
 
       - name: Run Docker Image to serve users
+        env:
+          ECR_REPOSITORY: ${{ secrets.ECR_REPO }}
         run: |
+          ECR_REPOSITORY=$(echo "$ECR_REPOSITORY" | tr -d '\r\n ')
+
           docker run -d \
             --name app-container \
             -e AWS_ACCESS_KEY_ID="${{ secrets.AWS_ACCESS_KEY_ID }}" \
@@ -74,4 +83,4 @@ jobs:
             -e PINECONE_API_KEY="${{ secrets.PINECONE_API_KEY }}" \
             -e OPENAI_API_KEY="${{ secrets.OPENAI_API_KEY }}" \
             -p 8080:8080 \
-            "${{ steps.login-ecr.outputs.registry }}/${{ secrets.ECR_REPO }}:latest"
+            "${{ steps.login-ecr.outputs.registry }}/$ECR_REPOSITORY:latest"
