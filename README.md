@@ -7,7 +7,7 @@ An intelligent medical chatbot built using **RAG (Retrieval Augmented Generation
  
 ##  Live Demo
  
-**Public URL:** [Click here to Try the App][`http://<your-ec2-public-ip>:8080`](http://13.223.180.212:8080/)
+**Public URL:** [Click here to Try the App](http://13.223.180.212:8080/)
  
 ---
  
