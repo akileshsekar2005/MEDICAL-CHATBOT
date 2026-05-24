@@ -1,4 +1,4 @@
- · MD
+
 # 🏥 MediBot — AI-Powered Medical Chatbot
  
 An intelligent medical chatbot built using **RAG (Retrieval Augmented Generation)**, **LangChain**, **Pinecone**, **HuggingFace Embeddings**, and **Groq LLaMA 3.1** — powered by the Gale Encyclopedia of Medicine. Deployed on **AWS EC2** with **Docker**, **Amazon ECR**, and **GitHub Actions CI/CD**.
