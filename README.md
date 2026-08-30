@@ -71,7 +71,7 @@ MEDICAL-CHATBOT/
 | Amazon ECR | Store Docker images |
 | Amazon EC2 | Host and run the application |
 | GitHub Actions | CI/CD pipeline for auto deployment |
-| HTML/CSS/JavaScript | Frontend chatbot interface |
+| HTML/CSS | Frontend chatbot interface |
  
 ---
  
